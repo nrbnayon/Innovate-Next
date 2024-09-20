@@ -11,8 +11,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#363636] py-4">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <nav className="bg-[#363636] py-4 border border-[#191A23]">
+      <div className="max-w-7xl mx-auto flex justify-between items-center ">
         <div className="flex space-x-12 text-white">
           {navlinks.map((link) => (
             <div key={link.path} className="relative group">
@@ -23,14 +23,19 @@ const Navbar = () => {
                 <span>{link.title}</span>
                 <ChevronDown size={16} />
               </Link>
-              <div className="absolute hidden group-hover:block bg-white text-black mt-2 py-2 rounded-md shadow-lg z-20">
-                {/* Dropdown content can be added here */}
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+              <div className="absolute hidden group-hover:block bg-white text-black mt-2 py-2 rounded-md shadow-lg z-50">
+                <Link
+                  href="/submenu1"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Submenu Item 1
-                </a>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                </Link>
+                <Link
+                  href="/submenu2"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Submenu Item 2
-                </a>
+                </Link>
               </div>
             </div>
           ))}

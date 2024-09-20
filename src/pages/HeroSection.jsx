@@ -16,43 +16,51 @@ const HeroSection = () => {
 
     const handleMouseEnter = (index) => {
       boxes.forEach((box, i) => {
-        if (i === index) {
-          box.style.transform = "scale(1.15)";
-          box.style.zIndex = "10";
-          box.style.flexGrow = "2";
-        } else {
-          box.style.transform = "scale(0.9)";
-          box.style.zIndex = "1";
-          box.style.flexGrow = "1";
+        if (box) {
+          if (i === index) {
+            box.style.transform = "scale(1.15)";
+            box.style.zIndex = "10";
+            box.style.flexGrow = "2";
+          } else {
+            box.style.transform = "scale(0.9)";
+            box.style.zIndex = "1";
+            box.style.flexGrow = "1";
+          }
         }
       });
     };
 
     const handleMouseLeave = () => {
       boxes.forEach((box) => {
-        box.style.transform = "scale(1)";
-        box.style.zIndex = "1";
-        box.style.flexGrow = "1";
+        if (box) {
+          box.style.transform = "scale(1)";
+          box.style.zIndex = "1";
+          box.style.flexGrow = "1";
+        }
       });
     };
 
     boxes.forEach((box, index) => {
-      box.addEventListener("mouseenter", () => handleMouseEnter(index));
-      box.addEventListener("mouseleave", handleMouseLeave);
+      if (box) {
+        box.addEventListener("mouseenter", () => handleMouseEnter(index));
+        box.addEventListener("mouseleave", handleMouseLeave);
+      }
     });
 
     return () => {
       boxes.forEach((box, index) => {
-        box.removeEventListener("mouseenter", () => handleMouseEnter(index));
-        box.removeEventListener("mouseleave", handleMouseLeave);
+        if (box) {
+          box.removeEventListener("mouseenter", () => handleMouseEnter(index));
+          box.removeEventListener("mouseleave", handleMouseLeave);
+        }
       });
     };
   }, []);
 
   return (
-    <div className="h-[600px] relative">
+    <div className="w-full h-[600px] bg-white relative overflow-hidden">
       {/* Curved background */}
-      <div className="h-64">
+      <div className="h-64 bg-white border-b-[#191A23] -mt-1">
         <svg
           className="w-full mx-auto h-full"
           preserveAspectRatio="none"
@@ -67,7 +75,7 @@ const HeroSection = () => {
         </svg>
       </div>
 
-      <div className="absolute max-w-7xl mx-auto flex justify-between items-center inset-0 -top-20 space-x-10">
+      <div className="absolute max-w-7xl mx-auto flex justify-between items-center inset-0 -top-20 space-x-4 md:space-x-10 flex-wrap">
         {boxesData.map((box, index) => (
           <div
             key={index}
