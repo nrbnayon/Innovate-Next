@@ -1,4 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Innovate Next
+
+A Next.js application designed for showcasing innovative solutions and ideas.
+
+## Features
+
+- Built with Next.js and React
+- Responsive design
+- Integrated with Tailwind CSS and DaisyUI for styling
+- Includes Lucide icons for enhanced UI
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/innovate-next.git
+   cd innovate-next
+
 
 ## Getting Started
 
