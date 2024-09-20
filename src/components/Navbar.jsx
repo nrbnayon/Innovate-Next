@@ -11,9 +11,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#363636] text-white py-4 px-6 mb-0">
+    <nav className="bg-[#363636] py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="flex space-x-12">
+        <div className="flex space-x-12 text-white">
           {navlinks.map((link) => (
             <div key={link.path} className="relative group">
               <Link

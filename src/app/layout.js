@@ -12,10 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className}  antialiased `}>
-        <main className="max-w-screen-[1441px] mx-auto w-full p-2 bg-white">
+        <main className="max-w-[1441px] w-full mx-auto p-2 md:p-0 bg-white">
           <div className="min-h-screen">{children}</div>
         </main>
-        {children}
       </body>
     </html>
   );
