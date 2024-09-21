@@ -30,8 +30,8 @@ const Card3DSlider = () => {
   return (
     <div className="min-h-screen mx-auto py-4 bg-white  flex justify-center items-center">
       <div className="relative max-w-7xl mx-auto h-full bg-white  flex flex-col-reverse lg:flex-row space-y-10 lg:space-y-0 justify-between items-center px-4 lg:px-0">
-        <div className="w-full lg:w-2/5 text-center mt-8 lg:mt-0 lg:text-left px-4 lg:px-0">
-          <p className="mb-8 text-black text-xl font-bold">
+        <div className="w-full lg:w-[42%] text-center mt-8 lg:mt-0 lg:text-left px-4 lg:px-0">
+          <p className="mb-8 text-black text-base md:text-2xl font-semibold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

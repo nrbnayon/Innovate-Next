@@ -73,7 +73,7 @@ const PhotoGallery = () => {
           {/* <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">
             Lorem ipsum dolor sit amet
           </h2> */}
-          <p className="text-black text-xl font-bold mb-6 md:mb-8">
+          <p className="text-black text-base md:text-2xl font-normal mb-6 md:mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
