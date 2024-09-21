@@ -70,10 +70,10 @@ const PhotoGallery = () => {
         </div>
 
         <div className="relative text-center lg:text-start md:absolute w-full md:w-[469px] right-0 top-0 md:top-[125px] flex flex-col justify-center items-center lg:items-start">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">
+          {/* <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">
             Lorem ipsum dolor sit amet
-          </h2>
-          <p className="text-gray-600 mb-6 md:mb-8">
+          </h2> */}
+          <p className="text-black text-xl font-bold mb-6 md:mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

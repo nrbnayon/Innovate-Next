@@ -30,15 +30,13 @@ const Card3DSlider = () => {
   return (
     <div className="min-h-screen mx-auto py-4 bg-white  flex justify-center items-center">
       <div className="relative max-w-7xl mx-auto h-full bg-white  flex flex-col-reverse lg:flex-row space-y-10 lg:space-y-0 justify-between items-center px-4 lg:px-0">
-        {/* Left Section */}
-        <div className="w-full lg:w-1/3 text-center mt-8 lg:mt-0 lg:text-left px-4 lg:px-0">
-          <p className="mb-8">
+        <div className="w-full lg:w-2/5 text-center mt-8 lg:mt-0 lg:text-left px-4 lg:px-0">
+          <p className="mb-8 text-black text-xl font-bold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            reprehenderit in qui officia deserunt mollit anim id est laborum.
           </p>
           <div className="flex justify-center items-center">
             <button className="px-6 py-3 border-2 border-[#2D0399] text-[#2D0399] font-medium rounded-[20px] hover:bg-[#2D0399] hover:text-white transition-colors">
@@ -47,7 +45,6 @@ const Card3DSlider = () => {
           </div>
         </div>
 
-        {/* Right Side: 3D Card Slider */}
         <div className="relative w-full h-[295px] sm:w-[320px] lg:w-[470px] lg:h-[395px]">
           {cards.map((card, index) => (
             <div
@@ -82,7 +79,6 @@ const Card3DSlider = () => {
                     </div>
                   </div>
 
-                  {/* Subtitle and Description Section */}
                   <div
                     className="p-4"
                     style={{

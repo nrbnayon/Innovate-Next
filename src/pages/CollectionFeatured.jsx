@@ -3,10 +3,10 @@ import React, { useState } from "react";
 
 const CollectionFeatured = () => {
   const [selectedColor, setSelectedColor] = useState("#0FA958");
-  const [selectedBox, setSelectedBox] = useState(0); // Default selected small box index
+  const [selectedBox, setSelectedBox] = useState(0); 
 
   const smallBoxes = [
-    { color: "#0FA958" }, // Default color
+    { color: "#0FA958" }, 
     { color: "#BE92FB" },
     { color: "#FFACAC" },
     { color: "#2E4E3E" },
@@ -22,7 +22,6 @@ const CollectionFeatured = () => {
 
   return (
     <div className="bg-white min-h-screen text-white w-full mx-auto relative">
-      {/* Curved background */}
       <div className="h-[258px] w-full mx-auto">
         <svg
           className="w-full mx-auto h-full"
@@ -62,12 +61,11 @@ const CollectionFeatured = () => {
             ))}
           </div>
 
-          {/* Text section */}
           <div className="text-black w-full md:w-1/2 pr-5">
             <h3 className="text-2xl md:text-4xl font-bold mb-4">
               Collection Featured
             </h3>
-            <p className="md:w-3/4 text-sm md:text-base tracking-wide">
+            <p className="md:w-3/4 text-sm md:text-lg tracking-wide">
               Lorem ipsum dolor sit amet, conse ctetur <br /> adipiscing elit,
               sed do eiusmod tet ut <br /> labore et dolore magna aliqrit in vol{" "}
               <br /> uptate velit esse cillumsunt in culpa

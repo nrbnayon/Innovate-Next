@@ -59,7 +59,6 @@ const HeroSection = () => {
 
   return (
     <div className="w-full h-[600px] bg-white relative overflow-hidden">
-      {/* Curved background */}
       <div className="h-64 bg-white border-b-[#191A23] -mt-1">
         <svg
           className="w-full mx-auto h-full"
