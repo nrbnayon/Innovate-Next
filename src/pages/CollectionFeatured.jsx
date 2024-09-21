@@ -37,7 +37,7 @@ const CollectionFeatured = () => {
           />
         </svg>
       </div>
-      <div className="max-w-7xl mx-auto min-h-screen absolute inset-0 -top-32 px-4">
+      <div className="max-w-7xl mx-auto min-h-screen absolute inset-0 -top-30 px-2">
         <div className="w-full flex flex-col md:flex-row justify-between items-center h-full space-y-8 md:space-y-0 md:space-x-28">
           <div className="grid grid-cols-3 md:grid-cols-4 gap-4 w-full md:w-1/2 md:pr-10">
             {/* Large box */}
