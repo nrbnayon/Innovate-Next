@@ -59,7 +59,7 @@ const HeroSection = () => {
 
   return (
     <div className="w-full h-[600px] bg-white relative overflow-hidden">
-      <div className="h-64 bg-white border-b-[#191A23] -mt-1">
+      <div className="h-40 md:h-64 bg-white border-b-[#191A23] -mt-1">
         <svg
           className="w-full mx-auto h-full"
           preserveAspectRatio="none"
@@ -74,7 +74,7 @@ const HeroSection = () => {
         </svg>
       </div>
 
-      <div className="absolute max-w-7xl mx-auto flex justify-between items-center inset-0 -top-20 space-x-4 md:space-x-10 flex-wrap">
+      <div className="absolute max-w-7xl mx-auto flex justify-between items-center inset-0 -top-20 space-x-2 md:space-x-10 px-2">
         {boxesData.map((box, index) => (
           <div
             key={index}

@@ -1,3 +1,4 @@
+// "use client";
 import Link from "next/link";
 
 const NotFoundPage = () => {
@@ -7,11 +8,11 @@ const NotFoundPage = () => {
       <p className="text-2xl text-gray-600 mb-8">
         Sorry, we couldn’t find the page you’re looking for.
       </p>
-      <Link href="/">
-        <a className="px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600">
+      <>
+        < Link href="/" className="px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600">
           Go to Home
-        </a>
-      </Link>
+        </Link>
+      </>
     </div>
   );
 };

@@ -70,7 +70,7 @@ const Overview = () => {
         <div className="h-40 bg-white"></div>
 
         <div className="h-[500px] bg-gradient-to-b from-[#3C805D] to-[#6BE6A8] relative z-10">
-          <div className="max-w-7xl mx-auto h-full flex flex-col md:flex-row justify-between items-center px-4 md:px-8">
+          <div className="max-w-7xl mx-auto h-full flex flex-col md:flex-row justify-end md:justify-between items-end md:items-center px-2 md:px-8">
             <div className="w-full md:w-1/3 mb-8 md:mb-0">
               <h2 className="text-2xl font-bold text-black mb-4">Overview</h2>
               <p className="text-black mb-8 max-w-xl pr-0 md:pr-6">
