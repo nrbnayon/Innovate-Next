@@ -37,10 +37,10 @@ const Card = ({ color, title, count, index }) => (
           </div>
         ))}
       </div>
-      <h3 className="mt-2 text-xl font-semibold">{title}</h3>
+      <h3 className="mt-2 text-xl text-black font-semibold">{title}</h3>
       <div className="flex justify-between items-center mt-2">
-        <span className="text-sm text-gray-500">{count} TK</span>
-        <span className="text-sm text-gray-500">1 of {64 + index}</span>
+        <span className="text-sm text-black">{count} TK</span>
+        <span className="text-sm text-black">1 of {64 + index}</span>
       </div>
       <div className="flex space-x-2 mt-4">
         <button className="flex-1 bg-gradient-to-r from-[#9747FF] to-[#651BC6] text-white py-2 rounded-full text-sm font-medium">
@@ -88,7 +88,7 @@ const Discover = () => {
 
   return (
     <div className="max-w-7xl mx-auto min-h-screen px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">DISCOVER MORE</h1>
+      <h1 className="text-3xl font-black mb-6 text-black">DISCOVER MORE</h1>
 
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 space-y-4 sm:space-y-0">
         <div className="flex flex-wrap gap-2">
